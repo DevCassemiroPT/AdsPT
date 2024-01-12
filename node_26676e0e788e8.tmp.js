@@ -7,3 +7,5 @@ console.log(max);
 var nomes = [Fábio, Manuel, Felipe, Lucas, Igor]
 var alteracao1 = nomes.splice(0,1, "Alexandre")
 console.log(nomes)
+
+console.log("Hello World")
