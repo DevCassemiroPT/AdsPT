@@ -7,5 +7,4 @@ for(pos = 0; pos < notas.length; pos++){
 }
 
 var media = soma/notas.length;
-
-console.log("A sua média de notas é: " + media + "!")
+console.log("A sua média de notas é: " + media + "!");
