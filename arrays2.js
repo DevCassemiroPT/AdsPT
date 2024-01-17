@@ -27,14 +27,7 @@ var tot = numeros.reduce(function(total, numero){
 console.log(tot + "!");
 
 
-//ForEach
-var a = [2,4,6,8,10];
 
-var tot = 0;
-a.forEach(soma => {
-    tot += soma;
-});
-console.log("»" + tot + "«");
 
 //Exercício - Reduce, map e filter
 var exer = ["Igor","Isla","Fraga",4,6,8,10];
