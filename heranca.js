@@ -15,7 +15,7 @@ class DispositivoEletronico{
 
 class SmartPhone extends DispositivoEletronico{//extends: é utilizado para chamar a class(DispositivoEletronico)
     constructor(nome,cor,modelo){
-        super(nome); //super: é utilizado para chamar constructor(nome)
+        super(nome); //super: é utilizado para chamar constructor(nome) da class pai
         this.cor = cor;
         this.modelo = modelo;
     }
