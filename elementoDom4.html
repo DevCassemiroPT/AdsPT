@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Utilizando seletor do DOM</h1>
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>NodeJS</li>
+        </ul>
+
+<div id="conteudo" name="divconteudo" class="mensagem">
+    <p>Elemento de localização [0]</p>
+</div>
+
+<div name="divconteudo" class="mensagem">
+    <p>Elemento de localização [1]</p>
+</div>
+
+<div name="divconteudo" class="mensagem">
+    <p>Elemento de localização [2]</p>
+</div>
+
+<span id="novospan" class="novo">
+    Pegando o elemento com span
+</span>
+
+<div class="mensagem">
+    
+</div>
+
+</body>
+    <script>
+//Observações:
+//Quando o getElements conter "S", significa que estamos querendo, localizar um elemento dentro de um array
+//Quando o getElement NÃO "S", significa que estamos querendo, localizar um elemento, apenas.
+
+        elemento0 = document.getElementsByTagName('li')[0];
+        elemento0.style.color = 'blue';
+        
+        elemento1 = document.getElementsByTagName('li')[1];
+        elemento1.style.background = 'red';
+        
+        elemento2 = document.getElementsByTagName('li')[2];
+        elemento2.innerText = 'ReactJS';
+        elemento2.style.color = 'red'
+
+        elementoDiv = document.getElementById("conteudo");
+        elementoDiv.innerHTML = "<p>Estou colocando um p dentro de uma div</p>";
+
+        elementoName = document.getElementsByName("divconteudo")[1];
+        elementoName.style.color = 'blue';
+        elementoName.innerText = 'Alterando o texto da div';
+
+        elementoClass = document.getElementsByClassName("mensagem")[2];
+        elementoClass.style.background = 'green';
+
+        elementoSpanClass = document.querySelector("span.novo") //ou(#novo);
+        elementoSpanClass.innerText = 'yellow'
+
+        elementoSeletorAll = document.querySelectorAll(".mensagem")[3];
+        elementoSeletorAll.innerHTML = "<p>Pegando todos os elementos com a classe mensagem</p>"
+
+    </script>
+</html>
