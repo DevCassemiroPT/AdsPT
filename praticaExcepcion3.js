@@ -3,7 +3,7 @@ function checkPositive (numeros) {
         throw new Error ("O argumento deve ser um array.");
     }
     
-    const allPositive = numeros.every((num) => num > 0);
+    const allPositive = numeros.every((num) => num > 0); 
     if (!allPositive){
         throw new Error ("O array deve conter apenas números positivos.");
     }
@@ -17,5 +17,7 @@ try {
     console.log (isPositive);
 
 } catch (error) {
-    console.log ("Ocorreu um erro: " + error.message)
+    console.log ("Ocorreu um erro: " + error.message);
+} finally {
+    console.log ("Operação finalizada.");
 }
