@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elemento Dom 8</title>
+</head>
+<form name="formCadastro" onsubmit="validarFormulario()">
+    <label>Nome</label>
+    <input type="text" id="nome">
+
+    <label>Email</label>
+    <input type="email" id="email">
+
+    <button type="submit">Cadastrar</button>
+</form>
+<script>
+    function validarFormulario(){
+        var nomePessoa = document.forms["formCadastro"]["nome"].value;
+        if(nomePessoa == ""){
+            alert("Favor digite um nome");
+            event.preventDefault();
+        } else {
+            alert("Seja bem vindo(a) " + nomePessoa);
+            event.preventDefault();
+        }
+    }
+</script>
+</body>
+
+</html>
