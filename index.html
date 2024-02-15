@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="herancaContaBanc.js" ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Prova Prática aula 10</title>
 </head>
 <body>
-        
-    
+    <section class="container-fluid bg-light">
+        <h2 class="text-center">Formulário</h2>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Dados do colaborador(a)</legend>
+                <div class="mb-3">
+                    <label class="form-label" for="nome">Nome</label>
+                    <input class="form-control" type="text" name="nome" id="nome">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="idade">Idade</label>
+                    <input class="form-control" type="number" name="idade" id="idade" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="cargo">Cargo</label>
+                    <input class="form-control" type="text" name="cargo" id="cargo">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="departamento">Departamento</label>
+                    <input class="form-control" type="text" name="departamento" id="departamento">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="programação">Linguagem de programação</label>
+                    <input class="form-control" type="text" name="programação" id="programação">
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
 </body>
-</html> 
+<script src="provaPraticaExcepcion.js" ></script>
+</html>
