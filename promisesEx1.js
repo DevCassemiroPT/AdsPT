@@ -6,7 +6,6 @@ const minhaPromise = new Promise ((resolve, reject) => {
     } else {
         reject ("Algo correu mal!");
     }
-
 })
 
 minhaPromise
