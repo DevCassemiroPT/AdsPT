@@ -1,0 +1,35 @@
+function obterValor (valor){
+    return new Promise ((resolve,reject) => {
+        if (valor > 10){
+            valor += 1;
+            resolve (valor);
+        } else {
+            reject ("Não foi possível, obter o valor.");
+        }
+    })
+}
+
+function dobrarValor (valor){
+    return valor * 2;
+}
+
+function adiciona10 (valor ){
+    return valor + 10;
+}
+//Encadeamento do .then
+obterValor (28)
+.then ((valor) => {
+    console.log ("Valor obtido: ");
+    return dobrarValor (valor);
+})
+.then ((novoValor) => {
+    console.log ("Realizando o segundo tratamento: ");
+    return adiciona10 (novoValor);
+})
+.then ((resultado) => {
+    total = resultado + 5;
+    console.log ("O resultado final é: ", total);
+})
+.catch ((erro) => {
+    console.log ("Ocrreu um erro: ", erro);
+})
